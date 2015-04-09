@@ -10,6 +10,6 @@ RUN mkdir -p /data &&\
 
 VOLUME /data
 
-USER app
-
-CMD ["bash"]
+# No need for a real command, we don't need this container to
+# be running to access its volumes
+ENTRYPOINT ["echo", "'Data container'"]
