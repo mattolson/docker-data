@@ -1,4 +1,4 @@
-FROM mattolson/base:14.04
+FROM mattolson/base
 
 # Create the user first so it has the same uid/gid as any other user created in a similar fashion
 RUN groupadd -r app &&\
